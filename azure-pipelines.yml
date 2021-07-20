@@ -16,6 +16,7 @@ variables:
 
 steps:
 - task: NuGetToolInstaller@1
+echo: $(Build.BinariesDirectory)
 
 - task: NuGetCommand@2
   inputs:
